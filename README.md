@@ -1,2 +1,2 @@
 # COSC1200-Obj1
-COSC1200 Repo
+COSC1200 Repo.
