@@ -5,7 +5,6 @@ public class Student {
     public Student(String name, int age) { //function named after the class, this function becomes a constructor (declares the things that needs to happen)
         this.name = name; 
         this.age = age;
-
     }
 
     public String getName() {
