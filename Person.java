@@ -8,18 +8,18 @@
 
 import java.util.Scanner; // importing scanner
 
-public class Person { // person class settup
+public class Person { // person class setup
     private String name;
     private int age;
     private char gender;
 
-    public Person(String name, int age, char gender){ // constructor initialize
+    public Person(String name, int age, char gender){ // constructor initialization
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
 
-    // getters and setters for all variables
+    // getters and setters for name, age, and gender variables
     public String getName() {
         return name;
     }
@@ -46,40 +46,36 @@ public class Person { // person class settup
 
     // introduce method that displays the users input
     public void introduce() {
-        System.out.println("Name: " + getName());
-        System.out.println("Age: " + getAge());
-        System.out.println("Gender: " + getGender());
+        System.out.println("Name: " + getName()); // print out user name
+        System.out.println("Age: " + getAge()); // print out user age
+        System.out.println("Gender: " + getGender()); // print out user gender
     }
 
     // main method
     public static void main(String[] args) {
 
-        Scanner input1 = new Scanner(System.in);
-        System.out.println("Enter your name: "); 
-        String name = input1.nextLine();
+        Scanner scanner = new Scanner(System.in); // scanner setup
+
+        System.out.print("Enter your name: ");  // take user name input
+        String name = scanner.nextLine();
         
-        Scanner input2 = new Scanner(System.in);
-        System.out.println("Enter your age: ");
-        int age = input2.nextInt();
+        System.out.print("Enter your age: "); // take user age input
+        int age = scanner.nextInt();
         
-        Scanner input3 = new Scanner(System.in);
-        System.out.println("Enter your gender (M/F): "); 
-        char gender = input3.next(".").charAt(0);
+        System.out.print("Enter your gender (M/F): "); // take user gender input
+        char gender = scanner.next(".").charAt(0);
 
         // adding person class to main
         Person person = new Person(name, age, gender);
 
-        person.setName(name);
-        person.setAge(age);
-        person.setGender(gender);
+        person.setName(name); // setting input to name
+        person.setAge(age); // setting input to age
+        person.setGender(gender); // setting input to gender
 
-        // calling introduce method
+        // calling introduce method to print user info
         person.introduce();
 
         // closing scanner
-        input1.close();
-        input2.close();
-        input3.close();
+        scanner.close();
     }
-    
 }
