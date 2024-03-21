@@ -1,15 +1,15 @@
 public class Circus {
 
-    public Circle juggle(Circle updatedCircle) {
+    public circle1 juggle(circle1 updatedCircle) {
         updatedCircle.increaseRadius();
-        Circle createdCircle = new Circle();
+        circle1 createdCircle = new circle1();
         return createdCircle;
     }
 
     public static void main(String[] args) {
         Circus circus = new Circus();
-        Circle firstCircle = new Circle(); // radius set to 10
-        Circle secondCircle = new Circle();
+        circle1 firstCircle = new circle1(); // radius set to 10
+        circle1 secondCircle = new circle1();
         secondCircle = circus.juggle(firstCircle);
         // firstcircle radius is now 15 but returned circle is new circle with radius 10
         secondCircle.printRadius();

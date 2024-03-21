@@ -1,8 +1,8 @@
-class Circle {
+class circle1 {
 
     private double radius;
 
-    public Circle() {
+    public circle1() {
         radius = 10;
     }
 
