@@ -1,4 +1,4 @@
-// Patrick Hollyer-Viggiani Exercise 2
+// Patrick Hollyer-Viggiani Exercise 2: Abstract Class
 // 100910706
 
 // Making abstract class Animal, with abstract methods makeSound() and move()

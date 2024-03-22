@@ -1,4 +1,4 @@
-// Patrick Hollyer-Viggiani Exercise 3
+// Patrick Hollyer-Viggiani Exercise 3: Polymorphism
 // 100910706
 
 // Vehicle class with default drive method

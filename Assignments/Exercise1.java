@@ -1,4 +1,4 @@
-// Patrick Hollyer-Viggiani Exercise 1
+// Patrick Hollyer-Viggiani Exercise 1: Basic Inheritance
 // 100910706
 
 // Main shape class with string colour, and boolean filled (t/f)
